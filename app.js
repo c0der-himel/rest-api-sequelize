@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.send('index');
 });
 
-app.use('/users', usersRoute);
+app.use('/api/users', usersRoute);
 app.use(function (req, res, next) {
   res.status(404).send("Sorry can't find that!");
 });
