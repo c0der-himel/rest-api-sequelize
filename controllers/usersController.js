@@ -21,7 +21,7 @@ const createUser = (req, res) => {
   })
     .then((users) => {
       console.log(users);
-      res.redirect('/users');
+      res.redirect('/api/users');
     })
     .catch((err) => {
       console.log(err);
@@ -63,7 +63,7 @@ const updateUser = (req, res) => {
   )
     .then((users) => {
       console.log(users);
-      res.redirect('/users');
+      res.redirect('/api/users');
     })
     .catch((err) => {
       console.log(err);
@@ -78,7 +78,7 @@ const deleteUser = (req, res) => {
   })
     .then((users) => {
       console.log(users);
-      res.redirect('/users');
+      res.redirect('/api/users');
     })
     .catch((err) => {
       console.log(err);
